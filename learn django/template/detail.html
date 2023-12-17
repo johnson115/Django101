@@ -1,0 +1,20 @@
+{% extends "based_template.html" %}
+
+
+{% block title %} detail of img {% endblock %}
+
+{% block body %}
+
+
+<div class="row text-white">
+    <div class="col-sm-10 offset-sm-1 pt-5">
+        <h1>{{object.text}}</h1>
+        <img src="{{object.image.url}}" alt="" class="img-fluid rounded" style="width: 100%; height:auto ;">
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "based_template.html" %}
+
+
+{% block title %} add form img  {% endblock %}
+
+{% block body %}
+
+<form method="post" action="" enctype="multipart/form-data" class=" col-sm-4 offset-4 pt-5">
+<div class=" border border-success bg-dark p-2 text-white bg-opacity-75 col-sm-12 offset-0 my-5 py-5 "  >
+    <h1 class="text-capitalize text-center ">Upload an Image!</h1>
+{% csrf_token %}
+{{form.as_ul}}
+
+<div class="d-grid gap-2 col-6 mx-auto">
+<button type="submit" class="btn btn-success text-center mt-5 mb-3">add this image </button>
+</div>
+</div>
+</form>
+
+
+
+{% endblock %}
